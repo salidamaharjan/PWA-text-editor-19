@@ -43,6 +43,7 @@ module.exports = () => {
           },
         ],
       }),
+      
       // adding plugin for a service worker.
       new InjectManifest({
         swRrc: "./src-sw.js",
