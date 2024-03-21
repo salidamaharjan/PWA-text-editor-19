@@ -18,7 +18,11 @@ module.exports = () => {
       path: path.resolve(__dirname, "dist"),
     },
     plugins: [
-     
+      // adding plugin for a service worker.
+      new InjectManifest({
+        swRrc: "./src-sw.js",
+        swDest: "./src-sw.js",
+      }),
     ],
 
     module: {
