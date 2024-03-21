@@ -18,6 +18,12 @@ module.exports = () => {
       path: path.resolve(__dirname, "dist"),
     },
     plugins: [
+      //plugin for HTML webpack
+      new HtmlWebpackPlugin({
+        template: './index.html',
+        title: 'J.A.T.E'
+      }),
+
       //plugin for manifest file
       new WebpackPwaManifest({
         fingerprints: false,
