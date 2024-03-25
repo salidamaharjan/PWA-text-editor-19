@@ -23,11 +23,11 @@ module.exports = () => {
         template: "./index.html",
         title: "J.A.T.E",
       }),
-    //   // adding plugin for a service worker.
-    //   new InjectManifest({
-    //     swRrc: "./src-sw.js",
-    //     swDest: "./src-sw.js",
-    //   }),
+      // adding plugin for a service worker.
+      new InjectManifest({
+        swRrc: "./src-sw.js",
+        swDest: "./src-sw.js",
+      }),
     //   //plugin for manifest file
     //   new WebpackPwaManifest({
     //     fingerprints: false,
