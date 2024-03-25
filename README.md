@@ -5,11 +5,11 @@
 [GitHub Repo Link](https://github.com/salidamaharjan/PWA-text-editor-19)
 
 ## Description
-This application is build to make it use in offline mode. This uses webpack, workbox to build a Progressive Web App(PWA). The app is deployed to Render. It can be installed and used in offline mode.
+This application is build to make it use in offline mode. This uses webpack, workbox, indexedDB to build a Progressive Web App(PWA). The app is deployed to Render. It can be installed and used in offline mode.
 
 ## Installation
 Click on the given deployed app link. This will prompt open the app looks like follow:
-![JATE app](./asset/image/JATE.png)
+![Just Another Text Editor](./asset/image/JATE.png)
 click install button.
 
 ## Uses
@@ -20,6 +20,7 @@ User can install the app and use offline. User can add text or note which is sav
 - [WebPack](https://webpack.js.org/guides/asset-management/#loading-images)
 - [WorkBox](https://developer.chrome.com/docs/workbox/the-ways-of-workbox/)
 - [Render Deployment](https://coding-boot-camp.github.io/full-stack/render/render-deployment-guide)
+- [IndexedDb](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB)
 
 ## License
 
