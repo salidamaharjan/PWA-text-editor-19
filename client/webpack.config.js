@@ -17,12 +17,12 @@ module.exports = () => {
       filename: "[name].bundle.js",
       path: path.resolve(__dirname, "dist"),
     },
-    // plugins: [
-    //   //plugin for HTML webpack
-    //   new HtmlWebpackPlugin({
-    //     template: "./index.html",
-    //     title: "J.A.T.E",
-    //   }),
+    plugins: [
+      //plugin for HTML webpack
+      new HtmlWebpackPlugin({
+        template: "./index.html",
+        title: "J.A.T.E",
+      }),
     //   // adding plugin for a service worker.
     //   new InjectManifest({
     //     swRrc: "./src-sw.js",
@@ -47,19 +47,19 @@ module.exports = () => {
     //       },
     //     ],
     //   }),
-    // ],
+    ],
 
-    // module: {
+    module: {
     //   // Add Css loaders
-    //   rules: [
-    //     {
-    //       test: /\.css$/i,
-    //       use: ["style-loader", "css-loader"],
-    //     },
-    //     {
-    //       test: /\.(png|svg|jpg|jpeg|gif)$/i,
-    //       type: "asset/resource",
-    //     },
+      rules: [
+        {
+          test: /\.css$/i,
+          use: ["style-loader", "css-loader"],
+        },
+        {
+          test: /\.(png|svg|jpg|jpeg|gif)$/i,
+          type: "asset/resource",
+        },
     //     {
     //       test: /\.m?js$/,
     //       exclude: /node_modules/,
@@ -75,7 +75,7 @@ module.exports = () => {
     //         },
     //       },
     //     },
-    //   ],
-    // },
+      ],
+    },
   };
 };
