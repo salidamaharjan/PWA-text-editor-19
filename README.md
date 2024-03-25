@@ -5,7 +5,7 @@
 [GitHub Repo Link](https://github.com/salidamaharjan/PWA-text-editor-19)
 
 ## Description
-This application is build to make it use in offline mode. This uses webpack, workbox to build a Progressive Web App(PWA). The app is deployed in to Render. It can be installed and used in offline mode.
+This application is build to make it use in offline mode. This uses webpack, workbox to build a Progressive Web App(PWA). The app is deployed to Render. It can be installed and used in offline mode.
 
 ## Installation
 Click on the given deployed app link. This will prompt open the app looks like follow:
