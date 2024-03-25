@@ -23,58 +23,58 @@ module.exports = () => {
         template: "./index.html",
         title: "J.A.T.E",
       }),
-      // adding plugin for a service worker.
+      // // adding plugin for a service worker.
       new InjectManifest({
-        swRrc: "./src-sw.js",
-        swDest: "./src-sw.js",
+        swDest: "src-sw.js",
+        swSrc: "./src-sw.js",
       }),
-    //   //plugin for manifest file
-    //   new WebpackPwaManifest({
-    //     fingerprints: false,
-    //     inject: true,
-    //     name: "Just Another Text Editor",
-    //     short_name: "J.A.T.E",
-    //     description: "Takes notes with JavaScript syntax highlighting",
-    //     background_color: "#225ca3",
-    //     theme_color: "#225ca3",
-    //     start_url: "./",
-    //     publicPath: "./",
-    //     icons: [
-    //       {
-    //         src: path.resolve("src/images/logo.png"),
-    //         sizes: [96, 128, 192, 256, 384, 512],
-    //         destination: path.join("assets", "icons"),
-    //       },
-    //     ],
-    //   }),
+        //plugin for manifest file
+        new WebpackPwaManifest({
+          fingerprints: false,
+          inject: true,
+          name: "Just Another Text Editor",
+          short_name: "J.A.T.E",
+          description: "Takes notes with JavaScript syntax highlighting",
+          background_color: "#225ca3",
+          theme_color: "#225ca3",
+          start_url: "./",
+          publicPath: "./",
+          icons: [
+            {
+              src: path.resolve("src/images/logo.png"),
+              sizes: [96, 128, 192, 256, 384, 512],
+              destination: path.join("assets", "icons"),
+            },
+          ],
+        }),
     ],
 
     module: {
-    //   // Add Css loaders
+      //   // Add Css loaders
       rules: [
         {
           test: /\.css$/i,
           use: ["style-loader", "css-loader"],
         },
-        {
-          test: /\.(png|svg|jpg|jpeg|gif)$/i,
-          type: "asset/resource",
-        },
-    //     {
-    //       test: /\.m?js$/,
-    //       exclude: /node_modules/,
-    //       // adding babel-loader
-    //       use: {
-    //         loader: "babel-loader",
-    //         options: {
-    //           presets: ["@babel/preset-env"],
-    //           plugins: [
-    //             "@babel/plugin-proposal-object-rest-spread",
-    //             "@babel/transform-runtime",
-    //           ],
-    //         },
-    //       },
-    //     },
+        // {
+        //   test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        //   type: "asset/resource",
+        // },
+        //     {
+        //       test: /\.m?js$/,
+        //       exclude: /node_modules/,
+        //       // adding babel-loader
+        //       use: {
+        //         loader: "babel-loader",
+        //         options: {
+        //           presets: ["@babel/preset-env"],
+        //           plugins: [
+        //             "@babel/plugin-proposal-object-rest-spread",
+        //             "@babel/transform-runtime",
+        //           ],
+        //         },
+        //       },
+        //     },
       ],
     },
   };
